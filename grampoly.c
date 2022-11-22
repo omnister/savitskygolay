@@ -18,8 +18,6 @@ int t=0;	// how to center the estimate
 char *progname;
 
 double gp(int i, int m, int k, int s) {
-    double num;
-    double den;
 
     if (k>0) {
 	return (4.0*k-2.0)/(k*(2.0*m-k+1.0))*(i*gp(i,m,k-1,s) +
@@ -73,7 +71,7 @@ int main(int argc, char **argv) {
     extern char *optarg;
     int optval;
     opterr = 0;                 /* disables getopt's error msg's */
-    int errflag = 0;
+    // int errflag = 0;
     int i;
 
     progname = argv[0];
