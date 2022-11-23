@@ -3,7 +3,7 @@
 #include <math.h>
 #include <unistd.h>
 
-// program to compute savitksy-golay gram polynomila coefficients based
+// program to compute savitksy-golay gram polynomial coefficients based
 // on (s=0) or its sth derivative evaluated at i, order k, over 2m+1
 // points, centered with offset t
 
