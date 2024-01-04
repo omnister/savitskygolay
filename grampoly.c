@@ -112,22 +112,28 @@ int main(int argc, char **argv) {
 
 
 void license(void) {
-    printf("/* --------------------------------------------------------------------\n");
     printf("    grampoly(1), computes Savitsky-Golay FIR filter coefficients\n");
     printf("    Copyright (C) 2021-2024  by Richard C. Walker.\n");
     printf("\n");
     printf("    Author's email: walker AT omnisterra DOT com\n");
     printf("    Homepage: http://www.omnisterra.com/walker/linux/piglet/intro.htm\n");
     printf("\n");
-    printf("    This program is free software; you can redistribute it and/or\n");
-    printf("    modify it under the terms of the GNU General Public License,\n");
-    printf("    version 3, which you should have received in the file \"COPYING\"\n");
-    printf("    along with this program; if not, write to the Free Software\n");
-    printf("    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n");
-    printf("\n");
-    printf("    This program is distributed in the hope that it will be useful,\n");
-    printf("    but WITHOUT ANY WARRANTY; without even the implied warranty of\n");
-    printf("    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n");
-    printf("-------------------------------------------------------------------- */\n");
+    printf(" Permission is hereby granted, free of charge, to any person obtaining a copy\n");
+    printf(" of this software and associated documentation files (the \"Software\"), to deal\n");
+    printf(" in the Software without restriction, including without limitation the rights\n");
+    printf(" to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n");
+    printf(" copies of the Software, and to permit persons to whom the Software is\n");
+    printf(" furnished to do so, subject to the following conditions:\n");
+    printf(" \n");
+    printf(" The above copyright notice and this permission notice shall be included in all\n");
+    printf(" copies or substantial portions of the Software.\n");
+    printf(" \n");
+    printf(" THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n");
+    printf(" IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n");
+    printf(" FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n");
+    printf(" AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n");
+    printf(" LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n");
+    printf(" OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n");
+    printf(" SOFTWARE.\n");
     printf("\n");
 }
