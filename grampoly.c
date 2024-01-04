@@ -112,11 +112,11 @@ int main(int argc, char **argv) {
 
 
 void license(void) {
-    printf("    grampoly(1), computes Savitsky-Golay FIR filter coefficients\n");
-    printf("    Copyright (C) 2021-2024  by Richard C. Walker.\n");
+    printf("grampoly(1), computes Savitsky-Golay FIR filter coefficients\n");
+    printf("Copyright (C) 2021-2024  by Richard C. Walker.\n");
     printf("\n");
-    printf("    Author's email: walker AT omnisterra DOT com\n");
-    printf("    Homepage: http://www.omnisterra.com/walker/linux/piglet/intro.htm\n");
+    printf("Author's email: walker AT omnisterra DOT com\n");
+    printf("Homepage: https://github.com/omnister/savitskygolay.git\n");
     printf("\n");
     printf(" Permission is hereby granted, free of charge, to any person obtaining a copy\n");
     printf(" of this software and associated documentation files (the \"Software\"), to deal\n");
