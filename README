@@ -4,6 +4,7 @@
 
     !) grampoly -?
     usage: grampoly [options]
+	[-l] print GPL 3 license statement
 	[-s <smoothing>] 0=smoothing, 1=first_derivative (default 0)
 	[-m <points>] width = 2*m+1 (default 3)
 	[-n <order>] 2=quadratic fit (default 4)
@@ -19,3 +20,5 @@
 
 These 5 example coefficients create a 2nd order convolutional smoothing
 filter that emits the best quadratic fit to a sequence of data points. 
+
+grampoly(1) is GPL 3.
