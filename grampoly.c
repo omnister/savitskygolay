@@ -16,6 +16,7 @@ int t=0;	// how to center the estimate
 // Convolution (Savitzky-Golay) Method, Peter A. Gorry
 
 char *progname;
+void license(void);
 
 double gp(int i, int m, int k, int s) {
 
@@ -59,6 +60,7 @@ double weight(int i, int t, int m, int n, int s) {
 void usage(void)
 {
     fprintf(stderr, "usage: %s [options]\n", progname);
+    fprintf(stderr, "    [-l] print license\n", s);
     fprintf(stderr, "    [-s <smoothing>] 0=smoothing, 1=first_derivative (default %d)\n", s);
     fprintf(stderr, "    [-m <points>] width = 2*m+1 (default %d)\n", m);
     fprintf(stderr, "    [-n <order>] 2=quadratic fit (default %d)\n", n);
@@ -76,8 +78,12 @@ int main(int argc, char **argv) {
 
     progname = argv[0];
 
-    while ((optval = getopt(argc, argv, "s:m:n:t:")) != EOF)
+    while ((optval = getopt(argc, argv, "ls:m:n:t:")) != EOF)
         switch (optval) {
+        case 'l':
+	    license(); 
+	    exit(1);
+            break;
         case 's':
             s = atoi(optarg);
             break;
@@ -102,4 +108,26 @@ int main(int argc, char **argv) {
     for (i=0; i<2*m+1; i++) {
 	printf("%d %g\n",i, weight(i-m, t, m, n, s));
     }
+}
+
+
+void license(void) {
+    printf("/* --------------------------------------------------------------------\n");
+    printf("    grampoly(1), computes Savitsky-Golay FIR filter coefficients\n");
+    printf("    Copyright (C) 2021-2024  by Richard C. Walker.\n");
+    printf("\n");
+    printf("    Author's email: walker AT omnisterra DOT com\n");
+    printf("    Homepage: http://www.omnisterra.com/walker/linux/piglet/intro.htm\n");
+    printf("\n");
+    printf("    This program is free software; you can redistribute it and/or\n");
+    printf("    modify it under the terms of the GNU General Public License,\n");
+    printf("    version 3, which you should have received in the file \"COPYING\"\n");
+    printf("    along with this program; if not, write to the Free Software\n");
+    printf("    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.\n");
+    printf("\n");
+    printf("    This program is distributed in the hope that it will be useful,\n");
+    printf("    but WITHOUT ANY WARRANTY; without even the implied warranty of\n");
+    printf("    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n");
+    printf("-------------------------------------------------------------------- */\n");
+    printf("\n");
 }

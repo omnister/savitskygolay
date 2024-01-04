@@ -1,3 +1,3 @@
 
-grampoly: grampoly.c
-	cc -Wall grampoly.c -o grampoly -lm
+grampoly: grampoly.o
+	cc -Wall grampoly.o -o grampoly -lm
